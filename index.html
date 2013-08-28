@@ -20,70 +20,72 @@
 
 		<div id="fb-root"></div>
 		<script>
-		( function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id))
-		return;
-		js = d.createElement(s);
-		js.id = id;
-		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=152446341461503";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+			( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=152446341461503";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
 
-		/*	! function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-		if (!d.getElementById(id)) {
-		js = d.createElement(s);
-		js.id = id;
-		js.src = p + '://platform.twitter.com/widgets.js';
-		fjs.parentNode.insertBefore(js, fjs);
-		}
-		}(document, 'script', 'twitter-wjs'); */
+			/*	! function(d, s, id) {
+			 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+			 if (!d.getElementById(id)) {
+			 js = d.createElement(s);
+			 js.id = id;
+			 js.src = p + '://platform.twitter.com/widgets.js';
+			 fjs.parentNode.insertBefore(js, fjs);
+			 }
+			 }(document, 'script', 'twitter-wjs'); */
 
-		! function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-		if (!d.getElementById(id)) {
-		js = d.createElement(s);
-		js.id = id;
-		js.src = p + '://platform.twitter.com/widgets.js';
-		fjs.parentNode.insertBefore(js, fjs);
-		}
-		}(document, 'script', 'twitter-wjs');
+			! function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = p + '://platform.twitter.com/widgets.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, 'script', 'twitter-wjs');
 
-		$(document).ready(function() {
-		$("a.active").click(function() {
-		$(this).toggleClass("hide");
-		
-		return false;
-		});
-		});
+			$(document).ready(function() {
+				$("#smokelink").click(function() {
+					$(this).addClass("hide");
+					$("#emaillink").removeClass("hide");
+					return false;
+				});
+			});
 		</script>
-		</head>
+	</head>
 
-		<body>
+	<body>
 		<div class="row">
-		<img src="img/blinking-stars2.gif" class="img-responsive background_image">
-		<div class="col-lg-3"></div>
-		<div class="col-lg-6 text text-center">
-		<img src="img/logotag1.png">
-		<p class="mainpara">
-		For the souls in the grip of wanderlust, Ghoomakad offers a breathtaking experience in the Dhauladhar Himalayas
-		surrounding Dharamsala. Get touched by nature and feel the calming simplicity by living with the village families.
-		This experience also contributes towards the holistic sustenance of the village.
-		</p>
-		<div class="link">
-		<hr width="15%" />
-		<a href="#" class="active">Send us smoke signal</a>
-		<a href="#" class="hide">Contact us at smokesignal@ghoomakad.im</a>
-		<hr width="15%"/>
-		<a href="#">Ghoomakad Diaries</a>
-		<hr width="15%"/>
+			<img src="img/blinking-stars2.gif" class="img-responsive background_image">
 		</div>
-		<div class="fb-like" data-href="http://www.ghoomakad.im" data-width="200" data-layout="button_count" data-show-faces="true" data-send="false"></div>
-		<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="www.ghoomakad.im" data-via="rajeshjoshi104"></a>-->
-		<a href="https://twitter.com/ghoomakad" class="twitter-follow-button" data-show-count="false"></a>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 text text-center">
+				<img src="img/logotag1.png">
+				<p class="mainpara">
+					For the souls in the grip of wanderlust, Ghoomakad offers a breathtaking experience in the Dhauladhar Himalayas
+					surrounding Dharamsala. Get touched by nature and feel the calming simplicity by living with the village families.
+					This experience also contributes towards the holistic sustenance of the village.
+				</p>
+				<div class="link">
+					<hr width="15%" />
+					<a href="#" id="smokelink" class="active">Send us smoke signal</a>
+					<a href="#" id="emaillink" class="hide">Contact us at smokesignal@ghoomakad.im</a>
+					<hr width="15%"/>
+					<a href="#">Ghoomakad Diaries</a>
+					<hr width="15%"/>
+				</div>
+				<div class="fb-like" data-href="http://www.ghoomakad.im" data-width="200" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+				<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="www.ghoomakad.im" data-via="rajeshjoshi104"></a>-->
+				<a href="https://twitter.com/ghoomakad" class="twitter-follow-button" data-show-count="false"></a>
+			</div>
+			<div class="col-lg-3"></div>
 		</div>
-		<div class="col-lg-3"></div>
-		</div>
-		</body>
+	</body>
 </html>

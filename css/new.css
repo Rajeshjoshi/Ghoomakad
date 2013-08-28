@@ -1,5 +1,6 @@
 .row {
 	margin: 0%;
+	height:100%;
 }
 a {
 	color: #9C9C9C;
@@ -24,7 +25,7 @@ a:hover {
 }
 .text {
 	text-align: center;
-	padding-top: 2%;
+	padding-top: 1%;
 	color: #EEE;
 }
 .link1 {

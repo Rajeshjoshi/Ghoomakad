@@ -1,8 +1,9 @@
 .row {
 	margin: 0%;
+	height: 100%;
 }
 .text {
-	color:#EEEEEE;
+	color: #EEEEEE;
 }
 a {
 	color: #9C9C9C;
@@ -11,13 +12,14 @@ a:hover {
 	color: #EEEEEE;
 	text-decoration: none;
 }
+
 .background_image {
 	position: absolute;
-	height:100%;
+	height: 100%;
 	width: 100%;
 }
 .mainpara {
-	padding-top: 10%;	
+	padding-top: 5%;
 }
 hr {
 	border-color: #9C9C9C;
@@ -25,7 +27,6 @@ hr {
 	margin-bottom: 0.5%;
 }
 .link {
-	margin-top:50%;
-	
+	margin-top: 48%;
 }
 

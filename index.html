@@ -18,18 +18,8 @@
 		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script src="js/jquery-1.9.js"></script>
 
-		<div id="fb-root"></div>
 		<script>
-			( function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id))
-						return;
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=152446341461503";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-
+		
 			/*	! function(d, s, id) {
 			 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
 			 if (!d.getElementById(id)) {
@@ -40,7 +30,7 @@
 			 }
 			 }(document, 'script', 'twitter-wjs'); */
 
-			! function(d, s, id) {
+/*			! function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
 				if (!d.getElementById(id)) {
 					js = d.createElement(s);
@@ -48,13 +38,15 @@
 					js.src = p + '://platform.twitter.com/widgets.js';
 					fjs.parentNode.insertBefore(js, fjs);
 				}
-			}(document, 'script', 'twitter-wjs');
+			}(document, 'script', 'twitter-wjs');*/
 
 			$(document).ready(function() {
-				$("#smokelink").click(function() {
-					$(this).addClass("hide");
-					$("#emaillink").removeClass("hide");
-					return false;
+				$("#smokeSignal").click(function() {
+				/*	$(this).addClass("hide");
+					$("#emaillink").removeClass("hide");*/
+					if(typeof _gaq === 'undefined')	
+						return true;
+					_gaq.push(['_trackEvent','Home','click@','smokesignal']);
 				});
 			});
 		</script>
@@ -70,22 +62,32 @@
 				<img src="img/logotag1.png">
 				<p class="mainpara">
 					For the souls in the grip of wanderlust, Ghoomakad offers a breathtaking experience in the Dhauladhar Himalayas
-					surrounding Dharamsala. Get touched by nature and feel the calming simplicity by living with the village families.
-					This experience also contributes towards the holistic sustenance of the village.
+					surrounding Dharamsala. Get touched by nature and feel the serenity by living with simple village families. 
+					This experience also contributes towards the sustainable development of the village as a whole.
 				</p>
 				<div class="link">
 					<hr width="15%" />
-					<a href="#" id="smokelink" class="active">Send us smoke signal</a>
-					<a href="#" id="emaillink" class="hide">Contact us at smokesignal@ghoomakad.im</a>
+					<a id="smokeSignal" href="mailto:ghoomakad.im@gmail.com"  class="active">Send us a smoke signal</a>
+					<a href="mailto:ghoomakad.im@gmail.com" id="emaillink" class="active hide">Contact us at ghoomakad.im@gmail.com</a>
 					<hr width="15%"/>
-					<a href="#">Ghoomakad Diaries</a>
+					<a href="/blog" target="_blank">Ghoomakad Diaries</a>
 					<hr width="15%"/>
 				</div>
-				<div class="fb-like" data-href="http://www.ghoomakad.im" data-width="200" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+<iframe  src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fghoomakad.im&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:69px;" allowTransparency="true"></iframe>
 				<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="www.ghoomakad.im" data-via="rajeshjoshi104"></a>-->
-				<a href="https://twitter.com/ghoomakad" class="twitter-follow-button" data-show-count="false"></a>
+	<iframe  src="http://platform.twitter.com/widgets/follow_button.1347008535.html#_=1349721888631&id=twitter-widget-10&lang=en&screen_name=Ghoomakad&show_count=false&show_screen_name=true&size=m" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:31px;margin-left:11px;" allowTransparency="true"></iframe>
 			</div>
 			<div class="col-lg-3"></div>
 		</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43701945-1', 'ghoomakad.im');
+  ga('send', 'pageview');
+
+</script>
 	</body>
 </html>

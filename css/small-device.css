@@ -1,0 +1,24 @@
+@media only screen and (max-width: 480px) {
+
+	div.wholebody {
+		background: url("../img/x_480_360.gif") no-repeat center center fixed; 
+		
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	div.wholebody {
+		background: url("../img/x_1024_768.gif") no-repeat center center fixed; 
+		
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	div.wholebody {
+		background: url("../img/x_800_600.gif") no-repeat center center fixed; 
+		
+	}
+}
+

@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/bootstrap-glyphicons.css" media="screen" />
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/small-device.css" />
 
 		<!--<link rel="stylesheet" href="js/bootstrap.min.js" media="screen" />-->
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
@@ -19,7 +20,6 @@
 		<script src="js/jquery-1.9.js"></script>
 
 		<script>
-		
 			/*	! function(d, s, id) {
 			 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
 			 if (!d.getElementById(id)) {
@@ -30,64 +30,87 @@
 			 }
 			 }(document, 'script', 'twitter-wjs'); */
 
-/*			! function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-				if (!d.getElementById(id)) {
-					js = d.createElement(s);
-					js.id = id;
-					js.src = p + '://platform.twitter.com/widgets.js';
-					fjs.parentNode.insertBefore(js, fjs);
-				}
-			}(document, 'script', 'twitter-wjs');*/
+			/*			! function(d, s, id) {
+			 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+			 if (!d.getElementById(id)) {
+			 js = d.createElement(s);
+			 js.id = id;
+			 js.src = p + '://platform.twitter.com/widgets.js';
+			 fjs.parentNode.insertBefore(js, fjs);
+			 }
+			 }(document, 'script', 'twitter-wjs');*/
 
 			$(document).ready(function() {
 				$("#smokeSignal").click(function() {
-				/*	$(this).addClass("hide");
-					$("#emaillink").removeClass("hide");*/
-					if(typeof _gaq === 'undefined')	
+					/*	$(this).addClass("hide");
+					 $("#emaillink").removeClass("hide");*/
+					if ( typeof _gaq === 'undefined')
 						return true;
-					_gaq.push(['_trackEvent','Home','click@','smokesignal']);
+					_gaq.push(['_trackEvent', 'Home', 'click@', 'smokesignal']);
 				});
+
 			});
 		</script>
 	</head>
 
 	<body>
-		<div class="row">
-			<img src="img/blinking-stars2.gif" class="img-responsive background_image">
-		</div>
-		<div class="row">
-			<div class="col-lg-3"></div>
-			<div class="col-lg-6 text text-center">
-				<img src="img/logotag1.png">
-				<p class="mainpara">
-					For the souls in the grip of wanderlust, Ghoomakad offers a breathtaking experience in the Dhauladhar Himalayas
-					surrounding Dharamsala. Get touched by nature and feel the serenity by living with simple village families. 
-					This experience also contributes towards the sustainable development of the village as a whole.
-				</p>
-				<div class="link">
-					<hr width="15%" />
-					<a id="smokeSignal" href="mailto:ghoomakad.im@gmail.com"  class="active">Send us a smoke signal</a>
-					<a href="mailto:ghoomakad.im@gmail.com" id="emaillink" class="active hide">Contact us at ghoomakad.im@gmail.com</a>
-					<hr width="15%"/>
-					<a href="/blog" target="_blank">Ghoomakad Diaries</a>
-					<hr width="15%"/>
+		<div class="wholebody">
+
+			<div class="row">
+				<div class="col-lg-3 col-sm-3 col-1"></div>
+				<div class="col-lg-6 col-sm-6 col-10 text-center">
+					<div class="row logo">
+						<div class="col-lg-12 col-sm-12 col-12">
+							<img src="img/logotag1.png"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-sm-12 col-12">
+							<p>
+								For the souls in the grip o f wanderlust, Ghoomakad offers a breathtaking experience in the Dhauladhar Himalayas
+								surrounding Dharamsala. Get touched by nature and feel the serenity by living with simple village families.
+								This experience also contributes towards the sustainable development of the village as a whole.
+							</p>
+						</div>
+					</div>
+					<div class="row link">
+						<div class="col-lg-3 col-sm-3 col-2"></div>
+						<div class="col-lg-6 col-sm-6 col-10 bottom">
+							<hr width="25%" />
+							<a id="smokeSignal" href="mailto:ghoomakad.im@gmail.com"  class="active">Send us a smoke signal</a>
+							<a href="mailto:ghoomakad.im@gmail.com" id="emaillink" class="active hide">Contact us at ghoomakad.im@gmail.com</a>
+							<hr width="25%"/>
+							<a href="/blog" target="_blank">Ghoomakad Diaries</a>
+							<hr width="25%"/>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-2"></div>
+					</div>
 				</div>
-<iframe  src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fghoomakad.im&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:69px;" allowTransparency="true"></iframe>
-				<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="www.ghoomakad.im" data-via="rajeshjoshi104"></a>-->
-	<iframe  src="http://platform.twitter.com/widgets/follow_button.1347008535.html#_=1349721888631&id=twitter-widget-10&lang=en&screen_name=Ghoomakad&show_count=false&show_screen_name=true&size=m" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:31px;margin-left:11px;" allowTransparency="true"></iframe>
+				<div class="col-lg-3 col-sm-3 col-1">
+					<div class="socialmedia">
+						<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fghoomakad.im&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:69px;" allowTransparency="true"></iframe>
+						<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="www.ghoomakad.im" data-via="rajeshjoshi104"></a>-->
+						<iframe  src="http://platform.twitter.com/widgets/follow_button.1347008535.html#_=1349721888631&id=twitter-widget-10&lang=en&screen_name=Ghoomakad&show_count=false&show_screen_name=true&size=m" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:31px;margin-left:11px;" allowTransparency="true"></iframe>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-3"></div>
 		</div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] ||
+				function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-43701945-1', 'ghoomakad.im');
-  ga('send', 'pageview');
+			ga('create', 'UA-43701945-1', 'ghoomakad.im');
+			ga('send', 'pageview');
 
-</script>
+		</script>
 	</body>
 </html>
